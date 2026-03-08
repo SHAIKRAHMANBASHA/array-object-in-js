@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" id="frm">
+        firstname <br>
+        <input type="text" name="" id="firstname"><br><br>
+        password <br>
+        <input type="text" name="" id="lastname"> <br><br>
+        <input type="submit" value="submit">
+    </form>
+
+    <h1 id="h1"></h1>
+
+    <!----js code start here --------->
+
+    <script>
+
+        var form = document.getElementById("frm");
+        form.onsubmit = function () {
+            var user = { firstname: document.getElementById("firstname").value, lastname: document.getElementById("lastname").value, result :document.getElementById("h1") }
+            user.result.innerHTML=user.firstname + user.lastname;
+            return false;
+        }
+    </script>
+</body>
+
+</html>

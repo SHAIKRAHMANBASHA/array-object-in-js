@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="frm">
+        username <br><br>
+        <input type="text" name="" id="user">
+        <br><br>
+        password <br><br>
+        <input type="password" name="" id="pass">
+        <br><br>
+        <input type="submit" value="submit">
+    </form>
+    <!----js code start here-->
+
+    <script>
+
+        var form = document.getElementById("frm");
+        form.onsubmit = function()
+        {
+            var user =[];
+            user[0] =document.getElementById("user").value;
+            user[1] = document.getElementById("pass").value;
+            
+            if(user[0] =="rahman")
+        {
+               if(user[1] =="123")
+               {
+                 window.alert("login success")
+               }
+               else
+               {
+                window.alert("incorrect password")
+               }
+        }
+        else
+        {
+            window.alert("user not found")
+        }
+        }
+    </script>
+</body>
+</html>
