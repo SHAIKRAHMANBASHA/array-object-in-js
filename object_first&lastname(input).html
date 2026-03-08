@@ -25,7 +25,10 @@
         var form = document.getElementById("frm");
         form.onsubmit = function () {
             var user = { firstname: document.getElementById("firstname").value, lastname: document.getElementById("lastname").value, result :document.getElementById("h1") }
+
             user.result.innerHTML=user.firstname + user.lastname;
+            or
+            var a = document.getElementById("h1").innerHTML =user.firstname + user.lastname;
             return false;
         }
     </script>
